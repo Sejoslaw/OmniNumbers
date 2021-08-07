@@ -33,6 +33,11 @@ namespace OmniNumbers
         {
             // TODO: Add logic
         }
+
+        public virtual void Power(Number n)
+        {
+            // TODO: Add logic
+        }
         
         #endregion
 
