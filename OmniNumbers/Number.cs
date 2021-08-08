@@ -14,27 +14,27 @@ namespace OmniNumbers
 
         #region Public Math Methods
 
-        public virtual void Add(Number n)
+        public virtual Number Add(Number n)
         {
             // TODO: Add logic
         }
 
-        public virtual void Subtract(Number n)
+        public virtual Number Subtract(Number n)
         {
             // TODO: Add logic
         }
 
-        public virtual void Multiply(Number n)
+        public virtual Number Multiply(Number n)
         {
             // TODO: Add logic
         }
 
-        public virtual void Divide(Number n)
+        public virtual Number Divide(Number n)
         {
             // TODO: Add logic
         }
 
-        public virtual void Power(Number n)
+        public virtual Number Power(Number n)
         {
             // TODO: Add logic
         }
@@ -51,7 +51,21 @@ namespace OmniNumbers
 
         #endregion
 
-        #region Operators
+        #region Math Operators
+
+        public static Number operator +(Number n1, Number n2) => n1.Add(n2);
+
+        public static Number operator -(Number n1, Number n2) => n1.Subtract(n2);
+
+        public static Number operator *(Number n1, Number n2) => n1.Multiply(n2);
+
+        public static Number operator /(Number n1, Number n2) => n1.Divide(n2);
+
+        public static Number operator ^(Number n1, Number n2) => n1.Power(n2);
+
+        #endregion
+        
+        #region Convertion Operators
 
         public static implicit operator bool(Number n)
         {
